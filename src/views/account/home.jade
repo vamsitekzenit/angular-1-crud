@@ -1,0 +1,57 @@
+div
+   .container.account-form
+    form(name="form", novalidate)
+        .input-row
+            input.form-control.input-field(type="text", required, placeholder="StudentName", onfocus="this.placeholder = ''", ng-model="name")
+        .input-row
+            input.form-control.input-field(type="text" placeholder="StudentAge" onfocus="this.placeholder = ''" ng-model="age",  required )
+       .input-row
+            input.form-control.input-field(type="text" placeholder="StudentPassportno" onfocus="this.placeholder = ''" ng-model="passportno",  required )
+
+        .input-row
+            input.form-control.input-field(type="text" placeholder="StudentPhoneno1" onfocus="this.placeholder = ''" ng-model="phonenumber",  required )
+
+
+        .input-row
+            input.form-control.input-field(type="text" placeholder="StudentQualification" onfocus="this.placeholder = ''" ng-model="qualification", required )
+
+
+        .input-row
+            button.btn.btn-primary.btn-block(ng-click="savestudent(form)") SAVE   
+
+
+
+         .input-row
+            button.btn.btn-primary.btn-block(ng-click="getlist()") Getlist   
+            
+
+        
+//- <table border="5">
+
+//- <tr>
+//- <th>Name</th>
+//- <th>age</th>
+//- <th>passportno<th>
+//- <th>phonenumber<th>
+//- <th>qualification<th>
+//- </tr>
+
+//- <tr ng-repeat="list in studentlist">
+
+//- <td>{{list.name}}</td>
+
+//- <td>{{list.age}}</td>
+
+//- <td>{{list.passport.passportno}}</td>
+
+//- <td ng-repeat=" phone in list.phones">{{phone.phonenumber}}</td>
+
+//- <td *ngFor=" qual in list.qualification">{{qual.qualification}}</td>
+//- </tr>
+
+//- </table><br>
+      
+
+  
+
+
